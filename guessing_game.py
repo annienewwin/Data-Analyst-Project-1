@@ -15,7 +15,6 @@ def start_game():
     player_guess = 0
     
     answer = random.randint(1,100)
-    print(answer)
     
     if len(score_board) >= 1:
         best_score = score_board[0]
