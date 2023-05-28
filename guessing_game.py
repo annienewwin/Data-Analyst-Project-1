@@ -61,6 +61,9 @@ def start_game():
     
     play_again = input("Would you like to play again? (Y/N):  ")
 
+    while play_again.upper() != "Y" and play_again.upper() != "N": 
+        play_again = input("I am sorry. I did not understand that, do you want to play again? (Y/N): ") 
+
     if play_again.upper() == "Y":
         start_game()
     elif play_again.upper() == "N":
