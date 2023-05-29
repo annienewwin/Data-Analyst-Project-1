@@ -35,9 +35,10 @@ def start_game():
         else:
 
             if player_guess == answer:
+                attempt +=1
                 break
             elif player_guess > answer:
-                print("It's lower!!")
+                print("It's lower!")
                 attempt += 1
                 continue
             elif player_guess < answer:
